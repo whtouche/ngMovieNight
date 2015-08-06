@@ -45,13 +45,21 @@ var loginStrategy = new LocalStrategy(strategyOptions, function(email, password,
 });
 
 var registerStrategy = new LocalStrategy(strategyOptions, function(email, password, done) {
-    var newUser = new User({
-        email: email,
-        password: password
-    });
+    var searchUser = { email: email };
 
-    newUser.save(function(err) {
-        done(null, newUser);
+    User.findOne(searchUser, function(err, user) {
+        if(err) return done(err);
+
+        if(user) return done(null, false, { message: "Email already exists" });
+
+        var newUser = new User({
+            email: email,
+            password: password
+        });
+
+        newUser.save(function(err) {
+            done(null, newUser);
+        });
     });
 });
 
