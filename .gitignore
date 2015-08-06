@@ -1,8 +1,10 @@
 /node_modules
 /frontend/node_modules/**/*
 /api/node_modules/**/*
+/sapi/node_modules/**/*
 /dist
 /.tmp
 /.sass-cache
 /frontend/bower_components
 /api/bower_components
+/sapi/bower_components
