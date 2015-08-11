@@ -7,7 +7,7 @@
  * # LogoutCtrl
  * Controller of the ngNodeJwtApp
  */
-angular.module('ngNodeJwtApp').controller('LogoutCtrl', function (authToken, $state) {
-    authToken.removeToken();
+angular.module('ngNodeJwtApp').controller('LogoutCtrl', function ($auth, $state) {
+    $auth.logout();
     $state.go('main');
 });

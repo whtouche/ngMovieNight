@@ -7,11 +7,11 @@
 
 module.exports = {
 
-    attributes: {
-        title: {
-            type: 'string',
-            required: true
-        }
+  attributes: {
+    title: {
+        type: 'string',
+        required: true
     }
+  }
 };
 

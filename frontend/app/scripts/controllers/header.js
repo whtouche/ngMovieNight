@@ -7,6 +7,6 @@
  * # HeaderCtrl
  * Controller of the ngNodeJwtApp
  */
-angular.module('ngNodeJwtApp').controller('HeaderCtrl', function ($scope, authToken) {
-    $scope.isAuthenticated = authToken.isAuthenticated;
+angular.module('ngNodeJwtApp').controller('HeaderCtrl', function ($scope, $auth) {
+    $scope.isAuthenticated = $auth.isAuthenticated;
 });

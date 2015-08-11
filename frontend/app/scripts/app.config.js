@@ -1,4 +1,4 @@
-angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvider, $httpProvider) {
+angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
     
     $urlRouterProvider.otherwise('/');
 
@@ -29,7 +29,10 @@ angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvide
         controller: 'LogoutCtrl'
     });
 
+    $authProvider.loginUrl  = API_URL + 'auth/login';
+    $authProvider.signupUrl = API_URL + 'auth/register';
+
     $httpProvider.interceptors.push('authInterceptor');
 })
  
-.constant('API_URL', 'http://localhost:3000/')
+.constant('API_URL', 'http://localhost:1337/')
