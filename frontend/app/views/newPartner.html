@@ -1,0 +1,9 @@
+<form ng-submit="submit()" name="newPartner" class="form-signin" novalidate>
+
+    <h1 class="form-signin-heading text-muted">New Partner</h1>
+
+    <input name="name" ng-model="name" type="text" class="form-control" placeholder="Name" required>
+
+    <button ng-disabled="newPartner.$invalid" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+</form>
+ 

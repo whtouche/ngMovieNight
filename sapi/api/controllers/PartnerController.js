@@ -1,7 +1,7 @@
 /**
- * JobController
+ * PartnerController
  *
- * @description :: Server-side logic for managing jobs
+ * @description :: Server-side logic for managing partners
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 

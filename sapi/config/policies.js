@@ -19,7 +19,7 @@
 
 module.exports.policies = {
 
-    'JobController': {
+    'PartnerController': {
         'find': ['jwtAuth']
     }
 

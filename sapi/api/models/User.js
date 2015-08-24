@@ -16,6 +16,10 @@ module.exports = {
         },
         password: {
             type: 'string'
+        },
+        partners: {
+            collection: 'partner',
+            via: 'owner'
         }
     },
     beforeCreate: function(attributes, next) {

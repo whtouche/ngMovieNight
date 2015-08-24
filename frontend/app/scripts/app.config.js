@@ -19,10 +19,10 @@ angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvide
         templateUrl: '/views/login.html',
         controller: 'LoginCtrl'
     })  
-    .state('jobs', {
-        url: '/jobs',
-        templateUrl: '/views/jobs.html',
-        controller: 'JobsCtrl'
+    .state('partners', {
+        url: '/partners',
+        templateUrl: '/views/partners.html',
+        controller: 'PartnersCtrl'
     })
     .state('logout', {
         url: '/logout',

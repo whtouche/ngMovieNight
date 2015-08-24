@@ -11,6 +11,7 @@ angular.module('ngNodeJwtApp').factory('authToken', function ($window) {
     var storage   = $window.localStorage;
     var userToken = 'userToken';
     var cachedToken;
+    var currentUser;
 
     var authToken =  {
         setToken: function(token) {
@@ -25,10 +26,14 @@ angular.module('ngNodeJwtApp').factory('authToken', function ($window) {
         },
         isAuthenticated: function() {
             return !!authToken.getToken();
+            console.log(authToken.getToken());
         },
         removeToken: function() {
             cachedToken = null;
             storage.removeItem(userToken);
+        },
+        currentUser: function() {
+            return currentUser;
         }
     };
 
