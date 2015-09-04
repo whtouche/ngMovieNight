@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name movieNight.controller:LogoutCtrl
+ * @name ngMovieNight.controller:LogoutCtrl
  * @description
  * # LogoutCtrl
- * Controller of the movieNight
+ * Controller of the ngMovieNight
  */
-angular.module('movieNight').controller('LogoutCtrl', function ($auth, $state) {
+angular.module('ngMovieNight').controller('LogoutCtrl', function ($auth, $state) {
     $auth.logout();
     $state.go('main');
 });

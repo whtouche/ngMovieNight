@@ -2,12 +2,12 @@
 
 /**
 * @ngdoc function
-* @name movieNight.controller:JobsCtrl
+* @name ngMovieNight.controller:JobsCtrl
 * @description
 * # JobsCtrl
-* Controller of the movieNight
+* Controller of the ngMovieNight
 */
-angular.module('movieNight').controller('MoviesCtrl', function ($scope, $http, API_URL, alert) {
+angular.module('ngMovieNight').controller('MoviesCtrl', function ($scope, $http, API_URL, alert) {
 
     $http.get('http://localhost:1337/movie').success(function(movies) {
         $scope.movies = movies;

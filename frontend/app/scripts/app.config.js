@@ -1,4 +1,4 @@
-angular.module('movieNight').config(function($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
+angular.module('ngMovieNight').config(function($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
 
     $urlRouterProvider.otherwise('/');
 

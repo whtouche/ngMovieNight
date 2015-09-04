@@ -2,12 +2,12 @@
 
 /**
 * @ngdoc service
-* @name movieNight.auth
+* @name ngMovieNight.auth
 * @description
 * # auth
-* Service in the movieNight.
+* Service in the ngMovieNight.
 */
-angular.module('movieNight').service('auth', function ($http, API_URL, authToken, $state) {
+angular.module('ngMovieNight').service('auth', function ($http, API_URL, authToken, $state) {
     function authSuccessful(res) {
         authToken.setToken(res.token);
         $state.go('main');

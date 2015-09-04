@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name movieNight.alert
+ * @name ngMovieNight.alert
  * @description
  * # alert
- * Service in the movieNight.
+ * Service in the ngMovieNight.
  */
-angular.module('movieNight').service('alert', function ($rootScope, $timeout) {
+angular.module('ngMovieNight').service('alert', function ($rootScope, $timeout) {
     var alertTimeout;
     return function(type, title, message, timeout) {
         $rootScope.alert = {

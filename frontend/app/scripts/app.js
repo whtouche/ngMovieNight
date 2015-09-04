@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc overview
- * @name movieNight
+ * @name ngMovieNight
  * @description
- * # movieNight
+ * # ngMovieNight
  *
  * Main module of the application.
  */
-angular.module('movieNight', ['ui.router', 'ngAnimate', 'satellizer']);
+angular.module('ngMovieNight', ['ui.router', 'ngAnimate', 'satellizer']);

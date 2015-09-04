@@ -2,12 +2,12 @@
 
 /**
 * @ngdoc service
-* @name movieNight.authToken
+* @name ngMovieNight.authToken
 * @description
 * # authToken
-* Factory in the movieNight.
+* Factory in the ngMovieNight.
 */
-angular.module('movieNight').factory('authToken', function ($window) {
+angular.module('ngMovieNight').factory('authToken', function ($window) {
     var storage   = $window.localStorage;
     var userToken = 'userToken';
     var cachedToken;

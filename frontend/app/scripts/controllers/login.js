@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name movieNight.controller:LoginCtrl
+ * @name ngMovieNight.controller:LoginCtrl
  * @description
  * # LoginCtrl
- * Controller of the movieNight
+ * Controller of the ngMovieNight
  */
-angular.module('movieNight').controller('LoginCtrl', function ($scope, alert, auth, $auth, $window, $rootScope) {
+angular.module('ngMovieNight').controller('LoginCtrl', function ($scope, alert, auth, $auth, $window, $rootScope) {
     $scope.submit = function() {
         $auth.login({ email: $scope.email, password: $scope.password })
         .then(function(res) {

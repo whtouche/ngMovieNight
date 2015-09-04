@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name movieNight.directive:sameAs
+ * @name ngMovieNight.directive:sameAs
  * @description
  * # sameAs
  */
-angular.module('movieNight').directive('validateEquals', function () {
+angular.module('ngMovieNight').directive('validateEquals', function () {
     return {
         require: 'ngModel',
         link: function(scope, element, attrs, ngModelCtrl) {

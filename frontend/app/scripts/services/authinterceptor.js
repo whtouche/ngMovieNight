@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name movieNight.authInterceptor
+ * @name ngMovieNight.authInterceptor
  * @description
  * # authInterceptor
- * Factory in the movieNight.
+ * Factory in the ngMovieNight.
  */
-angular.module('movieNight').factory('authInterceptor', function (authToken) {
+angular.module('ngMovieNight').factory('authInterceptor', function (authToken) {
     return {
         request: function(config) {
             var token = authToken.getToken();

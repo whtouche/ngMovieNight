@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name movieNight.controller:HeaderCtrl
+ * @name ngMovieNight.controller:HeaderCtrl
  * @description
  * # HeaderCtrl
- * Controller of the movieNight
+ * Controller of the ngMovieNight
  */
-angular.module('movieNight').controller('HeaderCtrl', function ($scope, $auth) {
+angular.module('ngMovieNight').controller('HeaderCtrl', function ($scope, $auth) {
     $scope.isAuthenticated = $auth.isAuthenticated;
 });

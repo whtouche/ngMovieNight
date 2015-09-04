@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name movieNight.controller:RegisterCtrl
+ * @name ngMovieNight.controller:RegisterCtrl
  * @description
  * # RegisterCtrl
- * Controller of the movieNight
+ * Controller of the ngMovieNight
  */
-angular.module('movieNight').controller('RegisterCtrl', function ($scope, alert, $auth) {
+angular.module('ngMovieNight').controller('RegisterCtrl', function ($scope, alert, $auth) {
     $scope.submit = function() {
         $auth.signup({ email: $scope.email, password: $scope.password })
         .then(function(res) {
