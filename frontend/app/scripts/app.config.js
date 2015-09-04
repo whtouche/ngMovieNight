@@ -1,5 +1,5 @@
-angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
-    
+angular.module('movieNight').config(function($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
+
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
@@ -18,11 +18,11 @@ angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvide
         url: '/login',
         templateUrl: '/views/login.html',
         controller: 'LoginCtrl'
-    })  
-    .state('partners', {
-        url: '/partners',
-        templateUrl: '/views/partners.html',
-        controller: 'PartnersCtrl'
+    })
+    .state('movies', {
+        url: '/movies',
+        templateUrl: '/views/movies.html',
+        controller: 'MoviesCtrl'
     })
     .state('logout', {
         url: '/logout',
@@ -34,5 +34,5 @@ angular.module('ngNodeJwtApp').config(function($urlRouterProvider, $stateProvide
 
     $httpProvider.interceptors.push('authInterceptor');
 })
- 
+
 .constant('API_URL', 'http://localhost:1337/')

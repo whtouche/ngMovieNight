@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name ngNodeJwtApp.controller:HeaderCtrl
+ * @name movieNight.controller:HeaderCtrl
  * @description
  * # HeaderCtrl
- * Controller of the ngNodeJwtApp
+ * Controller of the movieNight
  */
-angular.module('ngNodeJwtApp').controller('HeaderCtrl', function ($scope, $auth) {
+angular.module('movieNight').controller('HeaderCtrl', function ($scope, $auth) {
     $scope.isAuthenticated = $auth.isAuthenticated;
 });

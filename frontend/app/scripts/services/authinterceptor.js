@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name ngNodeJwtApp.authInterceptor
+ * @name movieNight.authInterceptor
  * @description
  * # authInterceptor
- * Factory in the ngNodeJwtApp.
+ * Factory in the movieNight.
  */
-angular.module('ngNodeJwtApp').factory('authInterceptor', function (authToken) {
+angular.module('movieNight').factory('authInterceptor', function (authToken) {
     return {
         request: function(config) {
             var token = authToken.getToken();

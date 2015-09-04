@@ -2,12 +2,12 @@
 
 /**
 * @ngdoc service
-* @name ngNodeJwtApp.auth
+* @name movieNight.auth
 * @description
 * # auth
-* Service in the ngNodeJwtApp.
+* Service in the movieNight.
 */
-angular.module('ngNodeJwtApp').service('auth', function ($http, API_URL, authToken, $state) {
+angular.module('movieNight').service('auth', function ($http, API_URL, authToken, $state) {
     function authSuccessful(res) {
         authToken.setToken(res.token);
         $state.go('main');

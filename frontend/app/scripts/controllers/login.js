@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name ngNodeJwtApp.controller:LoginCtrl
+ * @name movieNight.controller:LoginCtrl
  * @description
  * # LoginCtrl
- * Controller of the ngNodeJwtApp
+ * Controller of the movieNight
  */
-angular.module('ngNodeJwtApp').controller('LoginCtrl', function ($scope, alert, auth, $auth, $window, $rootScope) {
+angular.module('movieNight').controller('LoginCtrl', function ($scope, alert, auth, $auth, $window, $rootScope) {
     $scope.submit = function() {
         $auth.login({ email: $scope.email, password: $scope.password })
         .then(function(res) {

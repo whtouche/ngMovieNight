@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name ngNodeJwtApp.controller:LogoutCtrl
+ * @name movieNight.controller:LogoutCtrl
  * @description
  * # LogoutCtrl
- * Controller of the ngNodeJwtApp
+ * Controller of the movieNight
  */
-angular.module('ngNodeJwtApp').controller('LogoutCtrl', function ($auth, $state) {
+angular.module('movieNight').controller('LogoutCtrl', function ($auth, $state) {
     $auth.logout();
     $state.go('main');
 });

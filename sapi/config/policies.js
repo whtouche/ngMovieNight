@@ -19,7 +19,7 @@
 
 module.exports.policies = {
 
-    'PartnerController': {
+    'MovieController': {
         'find': ['jwtAuth']
     }
 

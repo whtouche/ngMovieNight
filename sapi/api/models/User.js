@@ -17,8 +17,8 @@ module.exports = {
         password: {
             type: 'string'
         },
-        partners: {
-            collection: 'partner',
+        movies: {
+            collection: 'movie',
             via: 'owner'
         }
     },

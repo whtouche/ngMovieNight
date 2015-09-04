@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name ngNodeJwtApp.alert
+ * @name movieNight.alert
  * @description
  * # alert
- * Service in the ngNodeJwtApp.
+ * Service in the movieNight.
  */
-angular.module('ngNodeJwtApp').service('alert', function ($rootScope, $timeout) {
+angular.module('movieNight').service('alert', function ($rootScope, $timeout) {
     var alertTimeout;
     return function(type, title, message, timeout) {
         $rootScope.alert = {

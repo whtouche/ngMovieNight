@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc overview
- * @name ngNodeJwtApp
+ * @name movieNight
  * @description
- * # ngNodeJwtApp
+ * # movieNight
  *
  * Main module of the application.
  */
-angular.module('ngNodeJwtApp', ['ui.router', 'ngAnimate', 'satellizer']);
+angular.module('movieNight', ['ui.router', 'ngAnimate', 'satellizer']);
