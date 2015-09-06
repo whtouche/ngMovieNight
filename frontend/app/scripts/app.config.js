@@ -18,6 +18,7 @@ angular.module('ngMovieNight').config(function($urlRouterProvider, $stateProvide
         url: '/login',
         templateUrl: '/views/login.html',
         controller: 'LoginCtrl'
+        // controllerAs: 'vm'
     })
     .state('movies', {
         url: '/movies',
